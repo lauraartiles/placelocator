@@ -21,6 +21,7 @@
 </p>
 
 <!-- We add the parameters to display a map for that location: center=<%= @location.address %> tells the google map to center the map at the address of that location and size=400x400 tells google maps that the image should be 400pixels by 400pixels. -->
+<img src="https://maps.googleapis.com/maps/api/streetview?location=<%= @location.address %>&size=400x400" >
 <img src="https://maps.googleapis.com/maps/api/staticmap?center=<%= @location.address %>&size=400x400" >
 
 <!-- The “.nearbys” function queries for nearby locations. We assign the @nearbylocations variable to this query. The value in the () sets the distance (in miles) away of the nearby locations to show. -->
